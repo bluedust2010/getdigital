@@ -1,0 +1,125 @@
+/* Navbar.css */
+
+.shared-header {
+    background-color: #0a0a0a;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0, 0, 50, 0.5);
+    box-sizing: border-box;
+}
+
+.shared-image-wrapper .shared-logo {
+    width: 100px;
+    filter: drop-shadow(0 0 8px #00f7ff);
+    border-radius: 50px;
+}
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Refined Hamburger Icon */
+.hamburger-menu .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.hamburger-menu .bar.open:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.hamburger-menu .bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu .bar.open:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+
+/* Slide-out Menu */
+.shared-nav-bar {
+    display: flex;
+}
+
+.shared-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.shared-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    transition: all 0.4s ease-in-out;
+    white-space: nowrap;
+}
+
+.shared-nav-link:hover {
+    color: #00f7ff;
+    transform: scale(1.05);
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #8a2be2;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .shared-nav-bar {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #0d0d0d;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .shared-image-wrapper .shared-logo {
+        width: 50px;
+        filter: drop-shadow(0 0 8px #00f7ff);
+        border-radius: 50px;
+    }
+
+    .shared-nav-bar.active {
+        right: 0;
+    }
+
+    .shared-nav-list {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .shared-nav-link {
+        font-size: 18px;
+    }
+
+    
+}

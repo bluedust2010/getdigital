@@ -27,13 +27,13 @@ export default function Navbar() {
                         <a className='shared-nav-link' href='/' onClick={toggleMenu}>Home</a>
                     </li>
                     <li className='shared-nav-list-item'>
-                        <a className='shared-nav-link' href='/about-us' onClick={toggleMenu}>About Us</a>
+                        <a className='shared-nav-link' href='/about' onClick={toggleMenu}>About Us</a>
                     </li>
                     <li className='shared-nav-list-item'>
                         <a className='shared-nav-link' href='/services' onClick={toggleMenu}>Services</a>
                     </li>
                     <li className='shared-nav-list-item'>
-                        <a className='shared-nav-link' href='/contact-us' onClick={toggleMenu}>Contact Us</a>
+                        <a className='shared-nav-link' href='/contact' onClick={toggleMenu}>Contact Us</a>
                     </li>
                 </ul>
             </nav>

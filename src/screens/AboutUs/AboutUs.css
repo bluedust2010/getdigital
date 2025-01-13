@@ -1,0 +1,71 @@
+/* AboutUs.css */
+
+.about-main {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #8a2be2;
+    margin-bottom: 20px;
+}
+
+.about-section-1, .about-section-2, .about-section-3, .about-section-4 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2), 0 0 30px rgba(138, 43, 226, 0.2);
+}
+
+.about-section-1 h2, .about-section-2 h2, .about-section-3 h2, .about-section-4 h2 {
+    font-size: 28px;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+    margin-bottom: 15px;
+}
+
+.about-section-1 p, .about-section-2 p, .about-section-3 p, .about-section-4 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.about-section-3 a, .about-section-4 a {
+    color: #00f7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-section-3 a:hover, .about-section-4 a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
+
+@media (max-width: 768px) {
+    .about-main {
+        padding: 20px 10px;
+    }
+
+    .about-h1 {
+        font-size: 28px;
+    }
+
+    .about-section-1, .about-section-2, .about-section-3, .about-section-4 {
+        padding: 15px;
+    }
+
+    .about-section-1 h2, .about-section-2 h2, .about-section-3 h2, .about-section-4 h2 {
+        font-size: 22px;
+    }
+
+    .about-section-1 p, .about-section-2 p, .about-section-3 p, .about-section-4 p {
+        font-size: 14px;
+    }
+}

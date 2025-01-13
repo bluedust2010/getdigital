@@ -1,0 +1,129 @@
+/* ecom.css */
+
+.ecom-main {
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.ecom-h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #8a2be2;
+}
+
+.ecom-description,
+.ecom-additional-services,
+.ecom-terms {
+    margin-top: 40px;
+}
+
+.ecom-description-title,
+.ecom-additional-services-title,
+.ecom-terms-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #8a2be2;
+    text-shadow: 0 0 15px #8a2be2, 0 0 30px #00f7ff;
+}
+
+.ecom-description-text,
+.ecom-additional-service-text,
+.ecom-terms-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.ecom-pages {
+    margin: 20px 0;
+}
+
+.ecom-pages-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ecom-pages-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.ecom-pages-list li {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ecom-additional-services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.ecom-additional-service {
+    text-align: center;
+    background-color: #111;
+    border: 2px solid #00f7ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0 0 15px rgba(0, 0, 50, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ecom-additional-service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 50, 0.7);
+}
+
+.ecom-additional-service-title {
+    font-size: 1.5rem;
+    color: #00f7ff;
+    margin-bottom: 10px;
+}
+
+.ecom-additional-service-price {
+    font-size: 1.2rem;
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+.ecom-terms-content {
+    text-align: center;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 50, 0.5);
+}
+
+.ecom-terms-subtitle {
+    font-size: 1.5rem;
+    color: #00f7ff;
+}
+
+.ecom-terms-text {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.ecom-additional-service a,
+.ecom-terms a {
+    color: #00f7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.ecom-additional-service a:hover,
+.ecom-terms a:hover {
+    color: #8a2be2;
+}

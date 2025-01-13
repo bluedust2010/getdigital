@@ -1,0 +1,144 @@
+/* Services.css */
+
+/* General Layout */
+.services-main {
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+.services-h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #8a2be2;
+    margin-bottom: 20px;
+}
+
+/* Service description */
+.services-offers p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Section headers */
+.services-cards h2, .services-additional h2, .why-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #8a2be2;
+    text-shadow: 0 0 15px #8a2be2, 0 0 30px #00f7ff;
+    margin-bottom: 30px;
+}
+
+/* Flex container for cards */
+.service-card-holder, .additional-card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Cards (Services and Additional) - Business Card Style */
+.services-card, .services-additional-card {
+    background-color: #111;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 50, 0.3);
+    padding: 20px;
+    width: 300px; /* Adjusted width to resemble business cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-card:hover, .services-additional-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 50, 0.6);
+}
+
+/* Card Titles */
+.services-card h3, .services-additional-card h3 {
+    color: #00f7ff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Card Text */
+.service-card-description p, .services-additional-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Pricing Section */
+.services-pricing span, .services-additional-card-price span {
+    font-size: 1.2rem;
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+.services-pricing span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.services-additional-card-price span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Links */
+.services-card a, .services-additional-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00f7ff;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.services-card a:hover, .services-additional-card a:hover {
+    background-color: #8a2be2;
+    color: #fff;
+}
+
+/* Bottom Sections */
+.why-us, .get-digital {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.why-us p, .get-digital p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.why-us h2, .get-digital h2 {
+    font-size: 2rem;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #8a2be2;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling for "Get Digital" */
+.get-digital p a {
+    color: #00f7ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-digital p a:hover {
+    color: #8a2be2;
+}

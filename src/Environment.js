@@ -1,6 +1,6 @@
 
 class DevEnv {
-    static logoUrl = "/placeholder.webp" 
+    static logoUrl = "/logo.jpeg" 
 }
 
 

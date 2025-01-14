@@ -127,3 +127,32 @@
 .ecom-terms a:hover {
     color: #8a2be2;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .ecom-h1 {
+        font-size: 2rem;
+    }
+
+    .ecom-description-title,
+    .ecom-additional-services-title,
+    .ecom-terms-title {
+        font-size: 1.5rem;
+    }
+
+    .ecom-description-text,
+    .ecom-additional-service-text,
+    .ecom-terms-text {
+        font-size: 1rem;
+    }
+
+    .ecom-additional-services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ecom-additional-service {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

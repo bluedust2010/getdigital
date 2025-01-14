@@ -97,17 +97,17 @@ export default function TermsAndConditions() {
       <section className="terms-section">
         <h2>10. Limitation of Liability</h2>
         <p>
-          - Get Digital is not liable for any damages resulting from website downtime, data loss, or cyber-attacks.
+          - Get Digital is not liable for any damages resulting from website downtime, data loss, or cyber-attacks if the client does not use our hosting services.
         </p>
         <p>
-          - It is the client’s responsibility to maintain regular backups of their website.
+          - Clients who do not host with us are responsible for maintaining regular backups of their website.
         </p>
       </section>
 
       <section className="terms-section">
         <h2>11. Governing Law</h2>
         <p>
-          These terms and conditions are governed by the laws of [Your Country/State].
+          These terms and conditions are governed by the laws of South Africa.
         </p>
       </section>
 

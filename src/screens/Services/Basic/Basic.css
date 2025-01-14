@@ -127,3 +127,58 @@
 .basic-terms a:hover {
     color: #8a2be2;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .basic-additional-services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic-additional-service {
+        width: 80%;
+    }
+
+    .basic-h1 {
+        font-size: 2rem;
+    }
+
+    .basic-description-title,
+    .basic-additional-services-title,
+    .basic-terms-title {
+        font-size: 1.5rem;
+    }
+
+    .basic-description-text,
+    .basic-additional-service-text,
+    .basic-terms-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .basic-main {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .basic-additional-service {
+        padding: 15px;
+    }
+
+    .basic-h1 {
+        font-size: 1.8rem;
+    }
+
+    .basic-description-title,
+    .basic-additional-services-title,
+    .basic-terms-title {
+        font-size: 1.2rem;
+    }
+
+    .basic-description-text,
+    .basic-additional-service-text,
+    .basic-terms-text {
+        font-size: 0.9rem;
+    }
+}

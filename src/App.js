@@ -23,7 +23,6 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/services/basic' element={<Basic />} />
           <Route path='/services/ecommerce' element={<ECom />} />
-          <Route path='/services/ecommerce' element={<ECom />} />
 
           <Route path='/contact' element={<Contact />} />
 

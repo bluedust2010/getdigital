@@ -31,8 +31,9 @@
     cursor: pointer;
     font-weight: bold;
     color: #00f7ff;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     position: relative;
+    border-radius: 5px;
 }
 
 .contact-forms ul li::after {
@@ -49,6 +50,12 @@
 .contact-forms ul li:hover::after,
 .contact-forms ul li.active::after {
     background: #8a2be2;
+}
+
+/* Active state for the selected form option */
+.contact-forms ul li.active {
+    color: #fff;
+    background-color: #8a2be2;
 }
 
 /* Form sections styling */
@@ -79,25 +86,36 @@
     font-weight: bold;
 }
 
+/* Consistent styling for all form inputs */
 .contact-form-input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid #8a2be2;
     background-color: #0a0a0a;
     color: #fff;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form-input[type="textarea"] {
+    height: 150px;
+    resize: vertical;
 }
 
 .contact-form-input:focus {
     outline: none;
     border-color: #00f7ff;
+    background-color: #1a1a1a;
 }
 
+/* Button container */
 .contact-form-button-container {
     text-align: center;
 }
 
+/* Button styling */
 .contact-form-button {
     background-color: #8a2be2;
     color: #fff;

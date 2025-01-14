@@ -28,8 +28,6 @@ export default function Contact() {
         const headers = {
             'Content-type': 'application/x-www-form-urlencoded',
         };
-        qryRef.current.disabled = true;
-        qteRef.current.disabled = true;
         axios.post('/api/contact', data, { headers: headers })
             .then(res => {
                 if (res.status === 200) {
@@ -38,12 +36,8 @@ export default function Contact() {
                 } else {
                     alert('There was an issue submitting your request, please try again later.');
                 }
-                qryRef.current.disabled = false;
-                qteRef.current.disabled = false;
             }).catch(err => {
                 alert('There was an issue submitting your request, please try again later.');
-                qryRef.current.disabled = false;
-                qteRef.current.disabled = false;
             });
     };
 
@@ -51,9 +45,19 @@ export default function Contact() {
         <main className='contact-main'>
             <h1>Contact Us</h1>
             <div className='contact-forms'>
-                <ul>
-                    <li onClick={() => { setSelectedForm('qry') }}>Submit a Query</li>
-                    <li onClick={() => { setSelectedForm('qte') }}>Request a Quote</li>
+            <ul>
+                    <li
+                        onClick={() => { setSelectedForm('qry') }}
+                        className={selected === 'qry' ? 'active' : ''}
+                    >
+                        Submit a Query
+                    </li>
+                    <li
+                        onClick={() => { setSelectedForm('qte') }}
+                        className={selected === 'qte' ? 'active' : ''}
+                    >
+                        Request a Quote
+                    </li>
                 </ul>
                 <div className='contact-form-sections'>
                     {selected === 'qry' && (
